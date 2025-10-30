@@ -1,0 +1,17 @@
+tensorflow
+
+Flask
+
+Flask-Cors
+
+Pillow
+
+numpy
+
+requests
+
+beautifulsoup4
+
+pymongo
+
+selenium

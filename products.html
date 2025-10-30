@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmhands - Market Prices</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div id="search-container">
+  <input type="text" id="search-input" placeholder="🔍 Search product or location...">
+  <button id="search-btn">Search</button>
+</div>
+
+        <div class="logo">
+            <h1>Farmhands Market 🌱</h1>
+        </div>
+    </header>
+
+    <main class="content-scrollable">
+        <section class="data-header">
+            <h2>Live Mandi Prices</h2>
+            <p>Real-time commodity prices from markets across India.</p>
+        </section>
+
+        <!-- Container for the product cards -->
+        <div id="product-grid" class="product-grid">
+            <!-- Product cards will be dynamically inserted here by JavaScript -->
+        </div>
+
+        <!-- Loader element for infinity scroll -->
+        <div id="loader" class="loader">
+            <div class="spinner"></div>
+            <p>Loading more crops...</p>
+        </div>
+         <div id="end-message" class="end-message" style="display: none;">
+            <p>You've reached the end of the list.</p>
+        </div>
+    </main>
+
+    <!-- Fixed Bottom Navigation -->
+    <nav class="bottom-nav">
+        <a href="farmers.html" class="nav-button">
+            <img src="images/icons8-binoculars-50.png" alt="Analyzer Icon" class="nav-icon" onerror="this.onerror=null;this.src='https://placehold.co/30x30/ffffff/000000?text=A';">
+            <span>Analyzer</span>
+        </a>
+        <a href="products.html" class="nav-button active"> <!-- 'active' class highlights current page -->
+            <img src="images/icons8-home-50.png" alt="Market Icon" class="nav-icon" onerror="this.onerror=null;this.src='https://placehold.co/30x30/ffffff/000000?text=M';">
+            <span>Market</span>
+        </a>
+        <a href="about.html" class="nav-button">
+            <img src="images/icons8-user-50.png" alt="FarmCam Icon" class="nav-icon" onerror="this.onerror=null;this.src='https://placehold.co/30x30/ffffff/000000?text=C';">
+            <span>FarmCam</span>
+        </a>
+    </nav>
+
+    <!-- Link to the new JavaScript file for this page -->
+    <script src="js/products.js"></script>
+
+</body>
+</html>
+

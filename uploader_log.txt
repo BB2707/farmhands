@@ -1,0 +1,13 @@
+[2025-10-30 10:45:08.066089] === Daily Price Upload Started ===
+[2025-10-30 10:45:08.073090] Fetching data from API...
+[2025-10-30 10:45:41.023282] Fetched 1000 records successfully.
+[2025-10-30 10:45:41.026263] Processing data for MongoDB upload...
+[2025-10-30 10:46:11.108498] Error in daily upload: your_mongodb_uri_here:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 6902f45c5cfa8c642f929b41, topology_type: Unknown, servers: [<ServerDescription ('your_mongodb_uri_here', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('your_mongodb_uri_here:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+
+[2025-10-30 10:47:34.694224] === Daily Price Upload Started ===
+[2025-10-30 10:47:34.986088] Fetching data from API...
+[2025-10-30 10:47:52.940642] Fetched 1000 records successfully.
+[2025-10-30 10:47:52.942637] Processing data for MongoDB upload...
+[2025-10-30 10:47:57.772473] Upserted: 998, Modified: 2
+[2025-10-30 10:47:57.772473] === Upload Completed Successfully ===
+

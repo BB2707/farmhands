@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmhands - Our Farmers</title>
+    <!-- Link to the same external CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- This header is fixed to the top (same as index.html) -->
+    <header class="main-header">
+        <div class="logo">
+            <h1>Farmhands 🌱</h1>
+        </div>
+    </header>
+
+    <!-- This main content area is scrollable -->
+    <main class="content-scrollable">
+        
+        <!-- NEW: Plant Health Analyzer Section -->
+        <section class="content-block plant-analyzer">
+            <h3>Plant Health Analyzer</h3>
+            <p>Upload an image of a plant to get an instant analysis of its health and type.</p>
+            <div class="image-uploader">
+                <img id="imagePreview" src="https://placehold.co/400x300/eef1f5/264653?text=Upload+Image" alt="Image preview">
+                <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+                <div class="uploader-buttons">
+                    <label for="imageUpload" class="profile-btn upload-btn">Choose Image</label>
+                    <button id="analyzeBtn" class="profile-btn" disabled>Analyze Plant</button>
+                </div>
+            </div>
+            <!-- This div will show the results from the analysis -->
+            <div id="analysisResult" class="analysis-result" style="display: none;">
+                <h4>Analysis Results:</h4>
+                <p><strong>Plant Type:</strong> <span id="plantType"></span></p>
+                <p><strong>Condition:</strong> <span id="plantCondition" class="status-good"></span></p>
+            </div>
+        </section>
+
+        <section class="data-header">
+            <h2>Meet Our Farmers</h2>
+            <p>The dedicated individuals behind your fresh produce.</p>
+        </section>
+
+        <!-- A grid to display the farmer cards -->
+        <section class="farmer-grid">
+            <!-- Farmer Card 1 -->
+            <div class="farmer-card">
+                <img src="https://placehold.co/100x100/e9c46a/264653?text=JS" alt="JD" class="farmer-image">
+                <div class="farmer-info">
+                    <h3>Jack Daniel</h3>
+                    <p class="farmer-location">North Korea</p>
+                    <p>VIP for over 300 years with 20 years of experience</p>
+                    <div class="farmer-crops">
+                        <span>Carrots</span>
+                        <span>Potatoes</span>
+                        <span>Beets</span>
+                    </div>
+                    <a href="#" class="profile-btn">View Profile</a>
+                </div>
+            </div>
+
+            <!-- Farmer Card 2 -->
+            <div class="farmer-card">
+                <img src="https://placehold.co/100x100/f4a261/ffffff?text=AW" alt="DD" class="farmer-image">
+                <div class="farmer-info">
+                    <h3>Dani Daniels</h3>
+                    <p class="farmer-location">Sunnyvale, Kinathukadavu</p>
+                    <p>High experiece with carrot and cucumber best at shouting the problem </p>
+                    <div class="farmer-crops">
+                        <span>Carrot</span>
+                        <span>Cucumber</span>
+                        <span>Banana</span>
+                    </div>
+                    <a href="#" class="profile-btn">View Profile</a>
+                </div>
+            </div>
+
+            <!-- Farmer Card 3 -->
+            <div class="farmer-card">
+                <img src="https://placehold.co/100x100/e76f51/ffffff?text=MC" alt="JC" class="farmer-image">
+                <div class="farmer-info">
+                    <h3>Jackie chan</h3>
+                    <p class="farmer-location">china, Koomapatti</p>
+                    <p>Hard worker, works until breaking some bones</p>
+                    <div class="farmer-crops">
+                        <span>Apples</span>
+                        <span>Pears</span>
+                        <span>Cherries</span>
+                    </div>
+                    <a href="#" class="profile-btn">View Profile</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- This navigation is a fixed bar at the bottom (same as index.html) -->
+    <nav class="bottom-nav">
+        <a href="farmers.html" class="nav-button">
+            <img src="images/icons8-binoculars-50.png" alt="Farmers Icon" class="nav-icon" onerror="this.onerror=null;this.src='https://placehold.co/30x30/2a9d8f/ffffff?text=F';">
+            <span>Farm</span>
+        </a>
+        <a href="products.html" class="nav-button">
+            <img src="images/icons8-home-50.png" alt="Products Icon" class="nav-icon" onerror="this.onerror=null;this.src='https://placehold.co/30x30/2a9d8f/ffffff?text=P';">
+            <span>Market</span>
+        </a>
+        <a href="about.html" class="nav-button">
+            <img src="images/icons8-user-50.png" alt="About Us Icon" class="nav-icon" onerror="this.onerror=null;this.src='https://placehold.co/30x30/2a9d8f/ffffff?text=A';">
+            <span>FarmCam</span>
+        </a>
+    </nav>
+    
+    <!-- Link to the new JavaScript file for the uploader -->
+    <script src="js/farmers.js"></script>
+
+</body>
+</html>
+
